@@ -1,0 +1,194 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #FFFFEE;
+	font-size: 12px;
+	overflow: auto;
+}
+
+#mainDiv{
+	width: 100%;
+	height: 100%;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #000; 
+}
+
+
+
+#loveHeart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 670px;
+    height: 625px;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+    color: white; /* 白色文字 */
+    border-radius: 20px; /* 圆角边框 */
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* 阴影效果 */
+}
+
+#garden {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 20px;
+}
+/* 
+#elapseClock {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+} */
+
+#elapseClock {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* 半透明白色背景 */
+    border: 2px solid #333; /* 深色边框 */
+    border-radius: 10px; /* 圆角边框 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 阴影效果 */
+    color: #333; /* 深色文字 */
+}
+
+#elapseClock .digit {
+    font-family: "digit";
+    font-size: 36px;
+    color: #000; /* 深色数字 */
+}
+
+
+#words {
+    font-family: "sans-serif";
+    width: 100%;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+
+#messages {
+    display: none;
+}
+
+#elapseClock .digit {
+    font-family: "digit";
+    font-size: 36px;
+}
+
+#loveu {
+    padding: 5px;
+    font-size: 22px;
+    margin-top: 80px;
+    text-align: center;
+    display: none;
+}
+
+#loveu .signature {
+    margin-top: 10px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+#clickSound{
+	display:none;
+}
+
+#code {
+	float: left;
+	width: 440px;
+	height: 400px;
+	color: #333;
+	font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", "sans-serif";
+	font-size: 12px;
+}
+
+#code .string{
+	color: #2a36ff;
+}
+
+#code .keyword{
+	color: #7f0055;
+	font-weight:bold;
+}
+
+#code .placeholder{
+	margin-left:15px;
+}
+
+#code .space{
+	margin-left:7px;
+}
+
+#code .comments{
+	color: #3f7f5f;
+}
+
+#copyright{
+	margin-top: 10px;
+	text-align: center;
+	width:100%;
+	color:#666;
+}
+
+#errorMsg{
+	width: 100%;
+	text-align: center;
+	font-size: 24px;
+	position: absolute;
+	top: 100px;
+	left:0px;
+}
+
+#copyright a{
+	color:#666;
+}
+
+
+
+.bg-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.bg-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.bg-slide.active {
+    opacity: 1;
+}
